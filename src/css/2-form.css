@@ -1,0 +1,25 @@
+.feedback-form {
+    display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-btn {
+    
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+        border-radius: 8px;
+            padding: 8px 16px;
+            width: 95px;
+            height: 40px;
+            background-color: #4e75ff;
+}
