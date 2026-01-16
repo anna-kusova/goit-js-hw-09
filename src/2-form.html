@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -13,14 +20,23 @@
         <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">Form</h1>
         <form class="feedback-form" autocomplete="off">
-          <div class="user-input">
-            <label>
+          <div class="user-field">
+            <label class="user-input-label">
               Email
-              <input type="email" name="email" autofocus />
+              <input
+                class="user-input user-element"
+                type="email"
+                name="email"
+                autofocus
+              />
             </label>
-            <label>
+            <label class="user-input-label">
               Message
-              <textarea name="message" rows="8"></textarea>
+              <textarea
+                class="user-textarea user-element"
+                name="message"
+                rows="8"
+              ></textarea>
             </label>
           </div>
           <button class="form-btn" type="submit">Submit</button>

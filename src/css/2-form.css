@@ -4,22 +4,77 @@ flex-direction: column;
 gap: 16px;
 }
 
-.user-input {
+.user-field {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-bottom: 16px;
 }
 
+.user-input-label {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #2e2f42;
+        text-align: left;
+}
+
+.user-element {
+    background-color: transparent;
+        border: 1px solid #808080;
+        border-radius: 4px;
+        width: 100%;
+        padding-top: 8px;
+            padding-left: 16px;
+            padding-bottom: 8px;
+        outline: transparent;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            color: #2e2f42;
+        transition: 0.3s border-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+.user-input {
+        height: 40px;
+    }
+
+.user-element:focus {
+    border-color: #000;
+}
+
+.user-textarea {
+        height: 80px;
+}
+
+
 .form-btn {
-    
+    display: block;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
+        text-align: center;
         color: #fff;
         border-radius: 8px;
             padding: 8px 16px;
-            width: 95px;
+            margin-left: auto;
+                margin-right: auto;
+            min-width: 95px;
             height: 40px;
             background-color: #4e75ff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+    background-color: #6c8cff;
 }
