@@ -35,7 +35,7 @@ form.addEventListener('submit', (event) => {
     localStorage.removeItem(STORAGE_KEY);
 
     formData.email = '';
-    formData.massege = '';
+    formData.message = '';
 
     form.reset();
 });
